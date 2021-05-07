@@ -1,0 +1,101 @@
+:root {
+  --purple: #8d27f5;
+  --black: #3a4750;
+  --dark: #303841;
+  --soft-white: #f1f1f1;
+}
+
+* {
+  font-family: sans-serif;
+}
+body {
+  background: var(--dark);
+}
+video {
+  background: var(--black);
+  width: 800px;
+}
+
+button {
+  background: var(--purple);
+  color: var(--soft-white);
+  outline: none;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px;
+  font-family: sans-serif;
+  cursor: pointer;
+  margin-right: 10px;
+  filter: brightness(0.8);
+  transition: filter 0.3s;
+}
+
+.refreshButton {
+  background-color: #e74c3c;
+  position: absolute;
+  right: -63px;
+  font-size: 32px;
+  top: 19px;
+  padding: 2px;
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  padding-left: 12px;
+  padding-right: 9px;
+  color: white;
+  border-radius: 84px;
+}
+
+.moreButton {
+  background-color: rgb(53, 100, 72);
+}
+
+button:hover {
+  filter: brightness(1);
+}
+
+.controls {
+  position: relative;
+  z-index: 10000000000;
+  width: 800px;
+  background: var(--black);
+  padding: 12px 0;
+}
+
+select#channel {
+  position: absolute;
+  left: 20px;
+  top: 14px;
+  outline: none;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.titleChannel {
+  color: var(--soft-white);
+  font-size: 42px;
+  font-family: "Roboto", sans-serif;
+  width: 800px;
+  text-align: left;
+  background: var(--purple);
+  padding: 10px 40px;
+  box-sizing: border-box;
+  margin-top: 44px;
+  text-transform: capitalize;
+  font-weight: 400;
+  text-align: center;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+input.channelurl {
+  color: transparent;
+  background: transparent;
+  outline: hidden;
+  border: 0;
+}
+
+input.channelurl::selection {
+  color: white;
+  background: red;
+}
