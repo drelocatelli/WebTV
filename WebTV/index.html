@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Web TV</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <center>
+            <div class="titleChannel">
+                Selecione um canal
+            </div>
+            <div id="televisao">
+            </div>
+
+            <div class="controls">
+                <select id="channel">
+                    
+                </select>
+                <button type="button" class="btn-fixed material-icons" data-target="fixed">control_camera</button>
+                <button type="button" class="btn-controls material-icons" data-target="pausar">pause</button>
+                <button type="button" class="btn-fullscreen material-icons" data-target="fullscreen">fullscreen</button>
+            </div>
+
+            <input type="text" class="channelurl" value="https://evpp.mm.uol.com.br/geob_band/app/chunklist_w2109694991.m3u8">
+
+        </center>
+        
+        
+        <script src="plugins/hls.js"></script>
+        <script src="plugins/startTV.js"></script>
+        <script src="lista.js"></script>
+        <script src="plugins/tvControls.js"></script>
+        
+    </body>
+
+    
+</html>
+
+<style>
+    *{font-family:sans-serif;}
+    body{background:#222;}
+    video{
+        background:black;
+        width: 800px;
+    }
+
+    button{
+        background:purple;
+        color:white;
+        outline:none;
+        border:0;
+        border-radius: 8px;
+        padding:12px;
+        font-family: sans-serif;
+        cursor:pointer;
+        margin-right:10px;
+    }
+
+    .controls {
+    position: relative;
+    z-index: 10000000000;
+    width: 800px;
+    background: black;
+    padding: 12px 0;
+    }
+
+    select#channel {
+    position: absolute;
+    left: 20px;
+    top: 14px;
+    outline: none;
+    padding: 8px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.titleChannel {
+    color: white;
+    font-size: 42px;
+    font-family: arial;
+    width: 800px;
+    text-align: left;
+    background: #800080;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    margin-top: 44px;
+    text-transform: capitalize;
+}
+
+input.channelurl{
+    color:transparent;
+    background:transparent;
+    outline:hidden;
+    border:0;
+}
+
+input.channelurl::selection{
+    color:white;
+    background:red;
+}
+</style>
