@@ -1,6 +1,3 @@
-let televisao = document.querySelector("#televisao");
-let videoPlayer = document.querySelector("video[name=videoPlayer]");
-
 function TVcontrols() {
   let controls = document.querySelector("div.controls .btn-controls");
 
