@@ -11,7 +11,6 @@ function changeChannel() {
   let channelOptions = document.querySelector("select#channel");
 
   function listaCanais() {
-    getListOfChannels();
     source.src = channel.value;
     playTV();
   }
@@ -115,8 +114,7 @@ function additional() {
       let channelUrl = document.querySelector(".channelurl");
       Swal.fire({
         title: "Corrigindo...",
-        text:
-          "Tenha paciência, as vezes demora mais que 5 minutos!\nUsar VPN e internet via cabo ajuda na melhoria do sinal",
+        text: "Tenha paciência, as vezes demora mais que 5 minutos!\nUsar VPN e internet via cabo ajuda na melhoria do sinal",
         icon: "success",
         timer: 9000,
         position: "top",
